@@ -1,5 +1,13 @@
 import React from "react";
-import { SiNextdotjs, SiSupabase, SiTailwindcss } from "react-icons/si";
+import {
+  SiCloudflareworkers,
+  SiHono,
+  SiNextdotjs,
+  SiPrisma,
+  SiReact,
+  SiSupabase,
+  SiTailwindcss,
+} from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -10,16 +18,16 @@ export default function Projects() {
     {
       title: "Portfolio Website Using NextJS",
       tech: [SiNextdotjs, SiTailwindcss, SiSupabase],
-      link: "http://localhost:3000",
+      link: "https://yajush-portfolio.vercel.app/",
       cover: "/project_1.jpg",
-      background: "bg-indigo-500",
+      background: "bg-indigo-800",
     },
     {
-      title: "Portfolio Website Using NextJS",
-      tech: [SiNextdotjs, SiTailwindcss, SiSupabase],
-      link: "http://localhost:3000",
-      cover: "/project_1.jpg",
-      background: "bg-indigo-500",
+      title: "Fullstack Blogging Website",
+      tech: [SiReact, SiPrisma, SiHono, SiCloudflareworkers, SiTailwindcss],
+      link: "https://postgresql-fullstack-blog.vercel.app/",
+      cover: "/project_2.jpg",
+      background: "bg-indigo-800",
     },
   ];
   return (
