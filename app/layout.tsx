@@ -9,7 +9,7 @@ const font = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://next-supabase-vote.vercel.app/"),
 
-  title: "YajushMishra",
+  title: "Portfolio - Yajush Mishra",
   authors: {
     name: "yajushmishra",
   },
