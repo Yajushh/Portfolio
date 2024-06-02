@@ -23,10 +23,19 @@ export default function Navbar({ className }: { className?: string }) {
         className
       )}
     >
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-800 -rotate-2">
+      <Link
+        href="/"
+        className="text-2xl font-bold underline underline-offset-8 decoration-green-800 -rotate-2"
+      >
         Yajush
-      </h1>
+      </Link>
       <div className="flex items-center gap-5">
+        <Link
+          href="/guestbook"
+          className="hover:scale-105 underline  duration-500 transition-all"
+        >
+          Guestbook
+        </Link>
         {socials.map((social, index) => {
           const Icon = social.icon;
           return (
