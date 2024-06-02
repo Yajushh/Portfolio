@@ -71,7 +71,7 @@ async function GuestbookForm() {
         className="border border-muted-foreground"
       />
       <RegisterLink>
-        <Button variant="outline">Sign for free</Button>
+        <Button variant="outline">Write Here</Button>
       </RegisterLink>
     </div>
   );
