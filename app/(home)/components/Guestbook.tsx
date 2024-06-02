@@ -11,8 +11,10 @@ import React, { Suspense } from "react";
 import { Form } from "./Form";
 import prisma from "@/app/lib/db";
 import { GuestBookFormLoading, LoadingMessages } from "@/components/ui/Loading";
+import { unstable_noStore as noStore } from "next/cache";
 
 async function getGuestBookEntry() {
+  noStore();
   const data = await prisma.guestBookEntry.findMany({
     select: {
       user: {
